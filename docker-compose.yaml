@@ -1,0 +1,7 @@
+version: "2"
+services:
+  slave:
+    build: .
+    command: --slave --master-host=master
+    ports:
+      - 5557 5558:5557 5558
